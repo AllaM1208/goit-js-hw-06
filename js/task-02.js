@@ -9,11 +9,13 @@ const ingredients = [
 
 const ingredientsList = document.getElementById("ingredients");
 
-const listItems = ingredients.map(ingredient => {
+const listItemsFragment = document.createDocumentFragment(); 
+
+ingredients.forEach(ingredient => {
   const listItem = document.createElement("li");
   listItem.textContent = ingredient;
   listItem.classList.add("item");
-  return listItem;
+  listItemsFragment.appendChild(listItem); 
 });
 
-ingredientsList.append(...listItems);
+ingredientsList.appendChild(listItemsFragment); 
