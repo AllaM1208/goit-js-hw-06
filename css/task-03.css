@@ -1,12 +1,10 @@
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    list-style: none;
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
 }
 
-.image {
-    display: block;
-    width: 300px;
-    object-fit: cover;
+.gallery-img {
+    width: 400px;
+     height: auto;
 }
+
